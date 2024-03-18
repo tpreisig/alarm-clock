@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,200;0,300;1,400;1,600;1,800&family=Lato:wght@400;700;900&family=Overpass:wght@200;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300&family=Prompt:ital,wght@0,300;0,400;0,500;0,700;1,200;1,300;1,400&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #FDAF7B;
+    background-image:
+        linear-gradient(to right, #a3acf4 2px, transparent 2px),
+        linear-gradient(to top, #a3acf4 2px, transparent 2px);
+    background-size: 210px 140px;
+    background-position: contain;
+    background-position-x: -2px;
+    overflow: hidden;
+}
+
+body,
+.wrapper,
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+
+    width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px 30px 50px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow:
+        inset -4px -2px 5px rgba(255, 255, 255, 0.5),
+        inset 4px 2px 5px rgba(255, 255, 255, 0.4);
+    /* border: 2px solid red; */
+    min-height: 65vh;
+
+}
+
+.wrapper img {
+    max-width: 260px;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.wrapper h1 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 10px 0 30px;
+    color: white;
+    font-family: "Roboto mono";
+    font-weight: 700;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.wrapper .content {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrapper .content.disable {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.content .column {
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid #b9c0f9;
+    width: calc(100% / 3 - 5px);
+    background: radial-gradient(rgba(248, 162, 248, 0.972), violet);
+}
+
+.column select {
+    outline: none;
+    border: none;
+    height: 53px;
+    width: 100%;
+    font-size: 19px;
+    background: transparent;
+    color: white;
+
+}
+
+.wrapper button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: radial-gradient(#d4d9fb8f, #b9c0f98f);
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper button:hover {
+    background: #aab4fb;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
